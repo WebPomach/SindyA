@@ -1,0 +1,21 @@
+body{
+
+  background-color: rgba(254, 214, 0, 0.35);
+  font-family: 'Nosifer', cursive;
+}
+h1{
+  text-align: center;
+}
+
+.img-galeria-derecha >img{
+  width: 90vh;
+  height: 90vh;
+  text-align: center;
+
+}
+.img-galeria-izquierda >img{
+  width: 90vh;
+  height: 90vh;
+  text-align: center;
+  align-items: center 50vh;
+}

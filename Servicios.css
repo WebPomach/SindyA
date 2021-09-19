@@ -1,0 +1,120 @@
+h1{
+  font-family: 'Prata';
+  color: rgba(0, 0, 0, 0.88);
+
+}
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  width: 95%;
+  counter-reset: list;
+  background: #eee;
+}
+
+dl {
+  height: 40vh;
+  max-width: 110vh;
+  width: 100%;
+  align-self: center;
+  box-sizing: border-box;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%, #fff), to(transparent));
+  background: linear-gradient(to right, #fff 80%, transparent);
+  box-shadow: -5px 5px 5px 0px rgba(153, 153, 153, 0.05);
+  -webkit-transition: box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out;
+}
+dl:nth-child(even) {
+  margin-left: 20px;
+}
+dl:nth-child(odd) {
+  margin-right: 20px;
+}
+dl:hover {
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.78);
+}
+dl:hover:before {
+  margin-left: 10px;
+}
+dl:before {
+  counter-increment: list;
+  content: counter(list);
+  font-family:sans-serif;
+  font-size: 60vh;
+  color: #f19a3f;
+  font-weight: bold;
+  margin-left: -35px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translatey(-52%);
+          transform: translatey(-52%);
+  -webkit-transition: margin 0.2s ease-out;
+  transition: margin 0.2s ease-out;
+}
+
+dt {
+  color: burlywood;
+  font-size: 3.1vh;
+  position: absolute;
+  left: 34%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:rgba(255, 93, 3, 0.83);
+  background-color: rgba(255, 252, 5, 0.5);
+}
+
+dd {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 100%;
+  max-width: 95%;
+  margin-left: 35%;
+  padding: 1px;
+  color: #000000;
+  font-size: 2.3vh;
+  font-family: 'Lora';
+}
+.btn-rojo{
+    text-decoration: none;
+    color: white;
+    font: 0.8rem;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    background-color:rgba(242, 24, 24, 0.86);
+    border-radius: 20px;
+    font-weight: 700;
+    text-transform:uppercase;
+    padding: 1rem 2rem;
+    display: inline-block;
+    align-self: center;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
